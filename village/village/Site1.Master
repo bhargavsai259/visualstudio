@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="village.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav>
+                <ul>
+                    
+                   <li><a href="default.aspx">HOME</a></li>
+                   <li><a href="about.aspx">ABOUT US</a></li>
+                   <li><a href="contact.aspx">CONTACT</a></li>
+
+
+                </ul>
+            </nav>
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server"><!--main-->
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <footer>
+            <p> &copy;2022 RURAL DEVELOPMENT .</p>  </footer> 
+    </form>
+</body>
+</html>
